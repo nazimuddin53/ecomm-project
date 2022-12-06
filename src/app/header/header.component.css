@@ -1,0 +1,133 @@
+.nav-bar{
+
+}
+.nav{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+}
+.nav h1{
+    width: 15%;
+    margin-top: 11px;
+    font-size: 32px;
+    color: var(--blueviolet);
+}
+.search{
+    width: 55%;
+    padding: 5px;
+    height: 45px;
+    display: flex;
+}
+.search input{
+    width: 78%;
+    padding: 5px;
+    height: 2.8rem;
+    margin-top: 5px;
+    border: 1px solid var(--blueviolet);
+    border-right: none;
+}
+.search button{
+    font-size: 19px;
+    text-align: justify;
+    border: 1px solid var(--blueviolet);
+    width: 18%;
+    padding: 5px;
+    margin-top: 5px;
+    height: 2.8rem;
+    background-color: var(--btnLgBlueviolet);
+    color: var(--blueviolet);
+    border-left: none;
+
+}
+.bar-ul {
+    position: relative;
+    width: 29%;
+}
+.bar-ul ul{
+    margin: 20px 0 20px 25px;
+    height: 89%;
+    font-size: 22px;
+    display: flex;
+}
+
+.bar-ul ul li{
+    display: inline-block;
+
+}
+.bar-ul ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: -4px;
+    color: var(--blueviolet);
+
+}
+.nav> ul >li::after{
+    content: "";
+    height: 2px;
+    margin: auto;
+    width: 0px;
+    background-color: var(--blueviolet);
+    display: block;
+    transition: 0.5s;
+}
+.nav> ul >li:hover::after{
+    width: 95%;
+    
+
+}
+
+.bar-ul mat-icon{
+    display: none;
+    
+}
+
+.nav-bar-ul mat-icon:hover li{
+    display: block;
+}
+
+@media only screen and (max-width: 789px){
+    body{
+        margin-right: 15px;
+    }
+    .nav h1{
+       text-align: center;
+        width: 25%;
+        font-size: 22px;
+    }
+    .search{
+        width: 45%;
+    }
+    .search button{
+        width: 28%;
+        font-size: 14px;
+    }
+    .bar-ul{
+        width: 20%;
+        padding: 2% 0 0 20%;
+        position: relative;
+        float: right;
+    }
+    .bar-ul mat-icon{
+        display: block;
+
+    }
+    .bar-ul ul{
+        width: 200px;
+        height: auto;
+        position:absolute;
+
+        /* left: -9999px; */
+        
+    }
+    .bar-ul ul li{
+        width: 100%;
+        background-color: blue;
+     
+    }
+    .bar-ul mat-icon:hover .bar-ul ul{
+        left: 0;
+        background-color: aqua;
+    }
+
+}

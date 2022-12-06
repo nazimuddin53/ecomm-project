@@ -1,0 +1,46 @@
+{
+  "seller": [
+    {
+      "name": "ee",
+      "email": "ee@gg.com",
+      "password": "dddd",
+      "id": 1
+    },
+    {
+      "name": "tamin",
+      "email": "tamin@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "tamim",
+      "email": "tamim@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "rohid",
+      "email": "rohid@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "rofik",
+      "email": "rofik@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "abraha",
+      "email": "abraha@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "rohidd",
+      "email": "ro@gmail.com",
+      "password": "1234",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.seller-auth{
+    margin: 20px 0;
+}
+.seller-auth h1{
+    margin: 20px 0;
+    height: 70px;
+}
+.signup{
+    background-image: linear-gradient(to top  left ,rgb(242, 220, 245),rgb(152, 160, 231) ,rgb(148, 147, 236),rgb(135, 189, 233));
+    margin: auto;
+    width: 32rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16% 0 18%;
+}
