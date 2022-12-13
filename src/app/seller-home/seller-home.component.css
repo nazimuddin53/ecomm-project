@@ -1,0 +1,38 @@
+.product-list{
+    padding: 10px;
+   
+
+}
+table{
+    text-align: left;
+    color: var(--blueviolet);
+    border-collapse: collapse;
+    width: 100%;
+
+}
+table td, table th{
+    border: 1px solid var(--blueviolet);
+    padding: 10px;
+    min-height: 160px;
+
+}
+tbody tr td:first-child{
+    min-width: 160px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+tbody tr td:last-child p{
+    width:min-content;
+    display: block
+}
+mat-icon{
+    
+}
+
+/* tbody tr td:last-child button mat-icon{
+    margin-bottom: 20px;
+    margin-top: -13px;
+    
+} */

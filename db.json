@@ -41,6 +41,71 @@
       "email": "ro@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "name": "rohid",
+      "email": "hn@gmail.com",
+      "password": "j",
+      "id": 8
+    },
+    {
+      "name": "rohid",
+      "email": "han@gmail.com",
+      "password": "d",
+      "id": 9
+    },
+    {
+      "name": "rohid",
+      "email": "ha@gmail.com",
+      "password": "d33",
+      "id": 10
+    },
+    {
+      "name": "rohid",
+      "email": "ha@gmail.com",
+      "password": "d33",
+      "id": 11
+    },
+    {
+      "name": "rohid",
+      "email": "ha@gmail.com",
+      "password": "d33",
+      "id": 12
+    },
+    {
+      "name": "rohid",
+      "email": "ha@gmail.com",
+      "password": "d33",
+      "id": 13
+    },
+    {
+      "name": "rohid",
+      "email": "h1a@gmail.com",
+      "password": "d33",
+      "id": 14
+    },
+    {
+      "name": "rohid",
+      "email": "dd@gg.com",
+      "password": "d",
+      "id": 15
+    },
+    {
+      "name": "nazim",
+      "email": "nazim@gmail.com",
+      "password": "1234",
+      "id": 16
+    }
+  ],
+  "products": [
+    {
+      "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
+      "price": "2009",
+      "color": "Nocturne blue aluminum, celestial blue accents",
+      "category": "laptop ",
+      "description": "sd",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-fq5487tu/15s-fq5487tu-01-228x228.webp",
+      "id": 2
     }
   ]
 }

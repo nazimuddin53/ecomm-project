@@ -5,7 +5,9 @@
 @tailwind utilities;
 :root{
     --blueviolet: blueviolet;
-    --btnLgBlueviolet: rgb(230, 216, 241);
+    --btnBlueviolet: rgb(230, 207, 248);
+    --btnLgBlueviolet: rgb(201, 147, 243);
+    --mss-gre-box: rgb(207, 247, 207);
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -31,19 +33,37 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     outline: 1px solid var(--blueviolet);
 }
 .form-button{
-    width: 40%;
+    width: min-content;
     height: 50px;
     padding: 10px ;
     font-size: 23px;
     margin: auto;
+    cursor: pointer;
     color: var(--blueviolet);
     border:1px solid var(--blueviolet);
-    background-color: var(--btnLgBlueviolet);
+    background-color: var(--btnBlueviolet);
     margin-bottom: 20px;
     border-radius: 15px;
 
 }
-
+.form-button:hover{
+    border:1px solid var(--btnLgBlueviolet);
+    color: aliceblue;
+    background-color: var(--blueviolet);
+}
+.error-p{
+    color: rgb(104, 6, 6);
+    font-size: 20px;
+}
+.gr-p-mess{
+    background-color: var(--mss-gre-box);
+    color: green;
+    height: 45px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    
+}
 @media only screen and (max-width: 789px) {
     
 }

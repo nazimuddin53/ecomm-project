@@ -1,0 +1,58 @@
+
+<div class="update-product">
+    <h2>Update Product</h2>
+   <form
+     #addProductForm="ngForm"
+     class="common-form"
+     (ngSubmit)="updateProduct(addProductForm.value)"
+   >
+     <!-- <p class="gr-p-mess" *ngIf="addProductMessage != undefined">{{addProductMessage}}</p> -->
+     <input
+       class="form-input"
+       ngModel = "{{productData?.name}}"
+       type="text"
+       name="name"
+       placeholder="Enter Product Name"
+     />    
+     <input
+       class="form-input"
+       ngModel="{{productData?.price}}"
+       type="text"
+       name="price"
+       placeholder="Enter Product Price"
+     />
+     <input
+       class="form-input"
+       ngModel="{{productData?.color}}"
+       type="text"
+       name="color"
+       placeholder="Enter Product Color"
+     />    
+     <input
+     class="form-input"
+     ngModel="{{productData?.category}}"
+     type="text"
+     name="category"
+     placeholder="Enter Product Category"
+   />
+     <textarea [style.height.px]="130"
+       class="form-input"
+       ngModel="{{productData?.description}}"
+       type="text"
+       name="description"
+       placeholder="Enter Product Description"
+     ></textarea>
+     <input
+       class="form-input"
+       ngModel="{{productData?.image}}"
+       type="text"
+       name="image"
+       placeholder="Enter Product Image URL"
+     />
+     <button mat-raised-button  class="form-button" color="primary">Update Product</button>
+     
+   </form>
+   <!-- <mat-icon  class="form-button" (click)="onNoClick()" color="warn">Cancle</mat-icon> -->
+ </div>
+ 
+ 

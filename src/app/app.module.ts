@@ -10,6 +10,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { MaterialModule } from "./material/material.module"
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { SellerDeleteProductsComponent } from './message/seller-delete-products/seller-delete-products.component';
+
+
 
 
 @NgModule({
@@ -20,6 +25,10 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
     SellerAuthComponent,
     NotFoundComponent,
     SellerHomeComponent,
+    SellerAddProductComponent,
+    SellerUpdateProductComponent,
+    SellerDeleteProductsComponent,
+
   ],
   imports: [
     BrowserModule,

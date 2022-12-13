@@ -4,12 +4,31 @@
 .seller-auth h1{
     margin: 20px 0;
     height: 70px;
+    position: relative;
 }
-.signup{
-    background-image: linear-gradient(to top  left ,rgb(242, 220, 245),rgb(152, 160, 231) ,rgb(148, 147, 236),rgb(135, 189, 233));
+.signup, .signIn{
+    background-image: linear-gradient(to top  left ,rgb(246, 241, 247),rgb(233, 234, 241) ,rgb(226, 226, 235),rgb(220, 234, 247));
     margin: auto;
-    width: 32rem;
+    width: 30rem;
     padding: 10px;
     text-align: center;
     border-radius: 16% 0 18%;
+    box-shadow: 6px 15px 15px var(--btnLgBlueviolet);
+
+}
+.signup::before, .signIn::before{
+    content: "";
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    margin: -10px -11px;
+    position: absolute;
+    display: block;
+    border-radius: 80% 10% 30% 10px ;
+    background-color: var(--blueviolet);
+    box-shadow: 1px 5px 5px var(--btnLgBlueviolet);
+}
+.auth-toggle-link{
+    color: blueviolet;
+    cursor: pointer;
 }

@@ -11,7 +11,11 @@ export class SellerAuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    if(localStorage.getItem("seller")){
+      this.sellerService.isSellerSignIn.next(true);
+    }
     return this.sellerService.isSellerSignIn;
+
   }
   
 }

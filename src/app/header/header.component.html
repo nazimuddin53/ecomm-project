@@ -15,20 +15,44 @@
 </div> -->
 
 <div class="nav-bar">
-    <nav class="nav">
-        <h1 class="">E-COMM</h1>
-        <div class="search"> 
-            <input type="text" class="" placeholder="Search for Products" />
-            <button class="">Search</button>
-        </div>
-        <div class="bar-ul">
-            <mat-icon >menu</mat-icon>
-        <ul class="nav-bar-ul">
-            <li ><a routerLink="" >Home</a></li>
-            <li ><a routerLink="seller-auth">Seller</a></li>
-            <li ><a href="#">Login</a></li>
-            <li ><a href="#">Cart(0)</a></li>
-        </ul>
-        </div>
-    </nav>
+  <nav class="nav">
+    <h1 class=""><a routerLink="/">E-COMM</a></h1>
+    
+    <div class="search-div" *ngIf="menuType == 'defult'">
+      <input type="text" class="" placeholder="Search for Products" />
+      <button class="">Search</button>
+    </div>
+
+    <div class="bar-ul" [ngSwitch]="menuType">
+      <mat-icon>menu</mat-icon>
+      <ul class="nav-bar-ul" *ngSwitchCase="'defult'">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="seller-auth">Seller</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart(0)</a></li>
+      </ul>
+      <ul class="nav-bar-ul" *ngSwitchCase="'seller'">
+        <li><a routerLink="seller-home">Product List</a></li>
+        <li><a routerLink="seller-add-product">Add Product</a></li>
+        <li><a (click)="logout('seller')">LogOut</a></li>
+        <li>
+          <a href="#">{{ sellerName | titlecase }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
+
+<!-- <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon ">
+        
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+       
+      </button>
+    </mat-toolbar> -->

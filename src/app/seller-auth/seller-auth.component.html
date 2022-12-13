@@ -1,12 +1,28 @@
 <div class="seller-auth">
-    <div class="signup">
-        <h1>Seller Sign-Up</h1>
+    <!-- sign up -->
+    <div class="signup" *ngIf="isSignIn">
+        <h1>Seller Sign Up</h1>
         <form #submitForm="ngForm" class="common-form" (ngSubmit)="signup(submitForm.value)">
-            <input class="form-input" type="text" ngModel name="name" placeholder="Enter Name">
+            <p class="error-p">{{signUpError}}</p>
+            <input class="form-input" type="text" ngModel name="name" placeholder="Enter Name" >
+            <input class="form-input" ngModel type="email" name="email" placeholder="Enter Email" >
+            <input class="form-input" ngModel type="password" name="password" placeholder="Enter password" >
+            <!-- <input class="form-input" ngModel type="password" name="confirmPassword" placeholder="Enter confirm password"> -->
+            <button mat-raised-button class="form-button" > Sign Up </button>
+
+        </form>
+        <a class="auth-toggle-link" (click)="openSignIn()"> Already have account? Sign In</a>
+    </div>
+    <!-- Sign in -->
+    <div class="signIn" *ngIf="!isSignIn">
+        <h1>Seller Sign In</h1>
+        <form #submitForm="ngForm" class="common-form" (ngSubmit)="signIn(submitForm.value)">
+            <p class="error-p">{{signInError}}</p>
             <input class="form-input" ngModel type="email" name="email" placeholder="Enter Email">
             <input class="form-input" ngModel type="password" name="password" placeholder="Enter password">
             <!-- <input class="form-input" ngModel type="password" name="confirmPassword" placeholder="Enter confirm password"> -->
-            <button class="form-button" >Sign Up</button>
+            <button mat-raised-button class="form-button" >Sign In</button>
+            <a class="auth-toggle-link" (click)="openSingUp()"> Don't have account? Sign Up</a>
         </form>
     </div>
 </div>
