@@ -1,43 +1,47 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
 import { Product } from '../data-type';
 import { ProductService } from '../services/product.service';
-import {MatSnackBar, MatSnackBarRef} from '@angular/material/snack-bar';
-import { AddProductMessageComponent } from '../message/add-product-message/add-product-message.component';
+import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
+
 import { Router, RouterLink } from '@angular/router';
-import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {
+  MatDialog,
+  MAT_DIALOG_DATA,
+  MatDialogRef,
+} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-seller-add-product',
   templateUrl: './seller-add-product.component.html',
-  styleUrls: ['./seller-add-product.component.css']
+  styleUrls: ['./seller-add-product.component.css'],
 })
 export class SellerAddProductComponent implements OnInit {
-  addProductMessage:string|undefined ;
+  addProductMessage: string | undefined;
   addMessage = new EventEmitter();
 
-  constructor(private product:ProductService,private _snackBar: MatSnackBar, private router:Router) { }
+  constructor(
+    private product: ProductService,
+    private _snackBar: MatSnackBar,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {
-
-  }
-  addProduct(data:Product){
-    if(data.category != ''){
+  ngOnInit(): void {}
+  addProduct(data: Product) {
+    if (data.category != '') {
       this.product.addProduct(data).subscribe((result) => {
         console.log(result);
-        if(result) {
-          
-          this._snackBar.openFromComponent(AddProductMessageComponent,{duration: 2000})
-          // this.dialogRef.close();
-          
+        if (result) {
+          this._snackBar.open('Add Product Successfull !', '', {
+            duration: 4000,
+          });
+
           this.router.navigate(['seller-home']);
-          
         }
       });
     }
-
   }
 
-  onNoClick():void{
+  onNoClick(): void {
     // this.dialogRef.close();
   }
 }

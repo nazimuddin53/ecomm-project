@@ -3,26 +3,40 @@ import { Injectable } from '@angular/core';
 import { Product } from '../data-type';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
+  addProduct(data: Product) {
+    return this.http.post('http://localhost:3000/products', data);
+  }
+  productList() {
+    return this.http.get<Product[]>('http://localhost:3000/products');
+  }
+  deleteProducts(id: number) {
+    return this.http.delete(`http://localhost:3000/products/${id}`);
+  }
+  getProduct(id: string) {
+    return this.http.get<Product>(`http://localhost:3000/products/${id}`);
+  }
+  updateProduct(product: Product) {
+    // console.log("update servise called ",product)
+    return this.http.put<Product>(
+      `http://localhost:3000/products/${product.id}`,
+      product
+    );
+  }
 
-  addProduct(data:Product){
-    return this.http.post("http://localhost:3000/products",data);
+  popularProducts() {
+    return this.http.get<Product[]>('http://localhost:3000/products/?_limit=4');
   }
-  productList(){
-    return this.http.get<Product[]>("http://localhost:3000/products")
+  trendyProducts() {
+    return this.http.get<Product[]>('http://localhost:3000/products/?_limit=8');
   }
-  deleteProducts(id:number){
-    return this.http.delete(`http://localhost:3000/products/${id}`)
-  }
-  getProduct(id:string){
-    return this.http.get<Product>(`http://localhost:3000/products/${id}`)
-  }
-  updateProduct(product:Product){
-    console.log("update servise called ",product)
-    return this.http.put<Product>(`http://localhost:3000/products/${product.id}`,product)
+  searchProducts(quary: string) {
+    return this.http.get<Product[]>(
+      `http://localhost:3000/products/?q=${quary}`
+    );
   }
 }

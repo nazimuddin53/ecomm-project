@@ -3,67 +3,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-    --blueviolet: blueviolet;
-    --btnBlueviolet: rgb(230, 207, 248);
-    --btnLgBlueviolet: rgb(201, 147, 243);
-    --mss-gre-box: rgb(207, 247, 207);
+:root {
+  --blueviolet: blueviolet;
+  --btnBlueviolet: rgb(230, 207, 248);
+  --btnLgBlueviolet: rgb(201, 147, 243);
+  --mss-gre-box: rgb(207, 247, 207);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-.common-form{
-    color: var(--blueviolet);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    width: 25rem;
+.common-form {
+  color: var(--blueviolet);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 25rem;
+}
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid var(--blueviolet);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  outline: 1px solid var(--blueviolet);
+}
+.form-button {
+  width: min-content;
+  height: 50px;
+  padding: 10px;
+  font-size: 23px;
+  margin: auto;
+  cursor: pointer;
+  color: var(--blueviolet);
+  border: 1px solid var(--blueviolet);
+  background-color: var(--btnBlueviolet);
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.form-button:hover {
+  border: 1px solid var(--btnLgBlueviolet);
+  color: aliceblue;
+  background-color: var(--blueviolet);
+}
+.error-p {
+  color: rgb(104, 6, 6);
+  font-size: 20px;
+}
+.gr-p-mess {
+  background-color: var(--mss-gre-box);
+  color: green;
+  height: 45px;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+}
 
+/* header slider image*/
+.carousel-caption {
+  border-radius: 5px;
+  background-color: #0000007a;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  border: 5px;
+  width: 30px;
+  height: 30px;
+  background-attachment: initial;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
 
-}
-.form-input{
-    width: 100%;
-    height: 50px;
-    padding: 20px;
-    border:1px solid var(--blueviolet);
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    outline: 1px solid var(--blueviolet);
-}
-.form-button{
-    width: min-content;
-    height: 50px;
-    padding: 10px ;
-    font-size: 23px;
-    margin: auto;
-    cursor: pointer;
-    color: var(--blueviolet);
-    border:1px solid var(--blueviolet);
-    background-color: var(--btnBlueviolet);
-    margin-bottom: 20px;
-    border-radius: 15px;
-
-}
-.form-button:hover{
-    border:1px solid var(--btnLgBlueviolet);
-    color: aliceblue;
-    background-color: var(--blueviolet);
-}
-.error-p{
-    color: rgb(104, 6, 6);
-    font-size: 20px;
-}
-.gr-p-mess{
-    background-color: var(--mss-gre-box);
-    color: green;
-    height: 45px;
-    padding: 10px;
-    width: 80%;
-    text-align: center;
-    
-}
 @media only screen and (max-width: 789px) {
-    
 }

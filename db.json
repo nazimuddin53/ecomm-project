@@ -100,12 +100,75 @@
   "products": [
     {
       "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
-      "price": "2009",
+      "price": "200000",
       "color": "Nocturne blue aluminum, celestial blue accents",
       "category": "laptop ",
-      "description": "sd",
-      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-fq5487tu/15s-fq5487tu-01-228x228.webp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias. Error!\n",
+      "image": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=907&q=80",
+      "id": 1
+    },
+    {
+      "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
+      "price": "20000",
+      "color": "Nocturne blue aluminum, celestial blue accents",
+      "category": "laptop ",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias.",
+      "image": "https://nairametrics.com/wp-content/uploads/2022/02/Laptop-.jpg",
       "id": 2
+    },
+    {
+      "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
+      "price": "154999",
+      "color": "Nocturne blue aluminum, celestial blue accents",
+      "category": "laptop ",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias.",
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08291860.png",
+      "id": 3
+    },
+    {
+      "name": "iPhone 40",
+      "price": "64000",
+      "color": "black",
+      "category": "phone",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias.",
+      "image": "https://www.bdprice.com.bd/wp-content/uploads/2022/09/Apple-iPhone-14-Pro-Max-Space-Black-price-in-Bangladesh.jpg",
+      "id": 4
+    },
+    {
+      "name": "PANASONIC LUMIX FZ300",
+      "price": "447.99",
+      "color": "black",
+      "category": "camera",
+      "description": "4K video and 4K photo: Panasonic’s exclusive 4K photo technology uses 30 frames per second in high resolution 4K ultra HD video to extract them as photos; You’ll never miss that moment again",
+      "image": "https://m.media-amazon.com/images/I/81xVbbwlqlL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Beats Studio Buds ",
+      "price": "89.95",
+      "color": " Ocean Blue",
+      "category": "Wireless, Apple H1 Chip, AirPlay, Bluetooth",
+      "description": "Custom acoustic platform delivers powerful, balanced sound\nControl your sound with two distinct listening modes: Active Noise Cancelling (ANC) and Transparency mode\nThree soft eartip sizes for a stable and comfortable fit while ensuring an optimal acoustic seal\nUp to 8 hours of listenin",
+      "image": "https://m.media-amazon.com/images/I/51KaVGWWl4L._AC_SX466_.jpg",
+      "id": 6
+    },
+    {
+      "name": "Stretchy Watch ",
+      "price": "29.99",
+      "color": "black",
+      "category": "watch",
+      "description": "【Compatible Series】our straps compatible with apple watch SE series 7,series 6, series 5, series 4, series 3, series 2, series 1, fits all iwatch bands 38mm 40mm 42mm 44mm 41mm 45mm. One-button quick release apple band, easy to install and remove from your apple smartwatch.",
+      "image": "https://m.media-amazon.com/images/I/81GPY5HFtuL._AC_SX522._SX._UX._SY._UY_.jpg",
+      "id": 7
+    },
+    {
+      "name": "SAMSUNG Galaxy S22",
+      "price": "10490",
+      "color": "Phantom Black",
+      "category": "phone",
+      "description": "8K SUPER STEADY VIDEO: Shoot videos that rival how epic your life is with stunning 8K recording, the highest recording resolution available on a smartphone; Video captured is effortlessly smooth, thanks to Auto Focus Video Stabilization on Galaxy S22 Ultra.Display Type:AMOLED.Form_factor : Smartphone",
+      "image": "https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX425_.jpg",
+      "id": 8
     }
   ]
 }

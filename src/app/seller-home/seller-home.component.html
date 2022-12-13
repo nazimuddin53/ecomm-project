@@ -16,7 +16,7 @@
       <tr *ngFor="let item of productList">
         <td><img src="{{ item.image }}" /></td>
         <td>{{ item.name }}</td>
-        <td>{{ item.price }}</td>
+        <td>{{ item.price | currency : "USD" : true : "1.2-2" }}</td>
         <td>{{ item.color }}</td>
         <td>{{ item.category }}</td>
         <td>{{ item.description }}</td>
@@ -25,8 +25,8 @@
             <mat-icon color="warn" (click)="deleteProduct(item.id)"
               >delete</mat-icon
             >
-            <mat-icon color="primary" routerLink="/seller-update-product/{{item.id}}"
-              >edit</mat-icon
+            <a routerLink="/seller-update-product/{{ item.id }}">
+              <mat-icon color="primary">edit</mat-icon></a
             >
           </p>
         </td>

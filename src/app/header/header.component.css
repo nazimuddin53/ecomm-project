@@ -1,103 +1,108 @@
- .nav-bar{
-    position: relative;
-
+.nav-bar {
+  position: relative;
 }
-.nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px 0;
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 0;
 }
-.nav h1{
-    text-align: center;
-    margin: 1% ;
-    font-size: 32px;
+.nav h1 {
+  text-align: center;
+  margin: 1%;
+  font-size: 32px;
 }
-.nav h1 a{
-
-
-    text-decoration: none;
-    color: var(--blueviolet);
-
+.nav h1 a {
+  text-decoration: none;
+  color: var(--blueviolet);
 }
 
-.search-div{
-    flex: 1;
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-
-
+.search-div {
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.search-div input{
-    width: 75%;
-    height: 48px;
-    padding: 10px;
-    border: 2px solid var(--blueviolet);
-    border-right: none;
-    color: var(--blueviolet);
-    outline: none;
-
-
+.search-div input {
+  width: 75%;
+  height: 48px;
+  padding: 10px;
+  border: 2px solid var(--blueviolet);
+  border-right: none;
+  color: var(--blueviolet);
+  outline: none;
 }
-.search-div button{
-    width: 20%;
-    height: 48px;
-    padding: 10px;
-    border: 2px solid var(--blueviolet);
-    border-left: none;
-    background-color: var(--btnBlueviolet);
-    font-size: 15px;
-    color: var(--blueviolet);
+.search-div button {
+  width: 20%;
+  height: 48px;
+  padding: 10px;
+  border: 2px solid var(--blueviolet);
+  border-left: none;
+  background-color: var(--btnBlueviolet);
+  font-size: 15px;
+  color: var(--blueviolet);
 }
+.search-result {
+  position: absolute;
+  width: 351px;
+  top: 50px;
+  z-index: 12;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.search-result:hover {
+}
+.search-result li {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.search-result li a {
+  text-decoration: none;
+  color: var(--blueviolet);
+}
+/* ************ */
 .bar-ul {
-    margin: 1% 0.1%;
+  margin: 1% 0.1%;
 }
-.bar-ul ul{
-    display: inline-flex;
-    font-size: 22px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.bar-ul ul li{
-    width: max-content;
-    cursor: pointer;
-
-}   
-.bar-ul ul li a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: -4px;
-    color: var(--blueviolet);
-
-}
-.nav> ul >li::after{
-    content: "";
-    height: 2px;
-    margin: auto;
-    width: 0px;
-    background-color: var(--blueviolet);
-    display: block;
-    transition: 0.5s;
-}
-.nav> ul >li:hover::after{
-    width: 95%;
-    
-
+.bar-ul ul {
+  display: inline-flex;
+  font-size: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.bar-ul mat-icon{
-    display: none;
-    
+.bar-ul ul li {
+  width: max-content;
+  cursor: pointer;
+}
+.bar-ul ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: -4px;
+  color: var(--blueviolet);
+}
+.nav > ul > li::after {
+  content: "";
+  height: 2px;
+  margin: auto;
+  width: 0px;
+  background-color: var(--blueviolet);
+  display: block;
+  transition: 0.5s;
+}
+.nav > ul > li:hover::after {
+  width: 95%;
 }
 
-.nav-bar-ul mat-icon:hover li{
-    display: block;
+.bar-ul mat-icon {
+  display: none;
+}
+
+.nav-bar-ul mat-icon:hover li {
+  display: block;
 }
 
 /* @media only screen and (max-width: 789px){
