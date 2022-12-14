@@ -59,6 +59,7 @@
 }
 .search-result li a {
   text-decoration: none;
+  cursor: pointer;
   color: var(--blueviolet);
 }
 /* ************ */

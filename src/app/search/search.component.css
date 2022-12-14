@@ -7,6 +7,7 @@
 .search-item img {
   width: 200px;
   object-fit: contain;
+  cursor: pointer;
 }
 .details {
 }
@@ -14,4 +15,8 @@
   font-size: 23px;
   font-weight: 400;
   color: var(--blueviolet);
+  cursor: pointer;
+}
+.details span {
+  margin-right: 10px;
 }

@@ -17,91 +17,13 @@
       "email": "tamim@gmail.com",
       "password": "1234",
       "id": 3
-    },
-    {
-      "name": "rohid",
-      "email": "rohid@gmail.com",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "name": "rofik",
-      "email": "rofik@gmail.com",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "name": "abraha",
-      "email": "abraha@gmail.com",
-      "password": "1234",
-      "id": 6
-    },
-    {
-      "name": "rohidd",
-      "email": "ro@gmail.com",
-      "password": "1234",
-      "id": 7
-    },
-    {
-      "name": "rohid",
-      "email": "hn@gmail.com",
-      "password": "j",
-      "id": 8
-    },
-    {
-      "name": "rohid",
-      "email": "han@gmail.com",
-      "password": "d",
-      "id": 9
-    },
-    {
-      "name": "rohid",
-      "email": "ha@gmail.com",
-      "password": "d33",
-      "id": 10
-    },
-    {
-      "name": "rohid",
-      "email": "ha@gmail.com",
-      "password": "d33",
-      "id": 11
-    },
-    {
-      "name": "rohid",
-      "email": "ha@gmail.com",
-      "password": "d33",
-      "id": 12
-    },
-    {
-      "name": "rohid",
-      "email": "ha@gmail.com",
-      "password": "d33",
-      "id": 13
-    },
-    {
-      "name": "rohid",
-      "email": "h1a@gmail.com",
-      "password": "d33",
-      "id": 14
-    },
-    {
-      "name": "rohid",
-      "email": "dd@gg.com",
-      "password": "d",
-      "id": 15
-    },
-    {
-      "name": "nazim",
-      "email": "nazim@gmail.com",
-      "password": "1234",
-      "id": 16
     }
   ],
   "products": [
     {
       "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
       "price": "200000",
-      "color": "Nocturne blue aluminum, celestial blue accents",
+      "color": "blue",
       "category": "laptop ",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias. Error!\n",
       "image": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=907&q=80",
@@ -110,7 +32,7 @@
     {
       "name": "HP Spectre x360 2-in-1 Laptop 14-ef0797nr",
       "price": "20000",
-      "color": "Nocturne blue aluminum, celestial blue accents",
+      "color": "green",
       "category": "laptop ",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quia omnis suscipit reiciendis explicabo eius magni nihil soluta saepe fuga odit fugit nam quibusdam expedita accusamus sit est illo quisquam molestias.",
       "image": "https://nairametrics.com/wp-content/uploads/2022/02/Laptop-.jpg",
@@ -155,7 +77,7 @@
     {
       "name": "Stretchy Watch ",
       "price": "29.99",
-      "color": "black",
+      "color": "red",
       "category": "watch",
       "description": "【Compatible Series】our straps compatible with apple watch SE series 7,series 6, series 5, series 4, series 3, series 2, series 1, fits all iwatch bands 38mm 40mm 42mm 44mm 41mm 45mm. One-button quick release apple band, easy to install and remove from your apple smartwatch.",
       "image": "https://m.media-amazon.com/images/I/81GPY5HFtuL._AC_SX522._SX._UX._SY._UY_.jpg",
@@ -164,11 +86,79 @@
     {
       "name": "SAMSUNG Galaxy S22",
       "price": "10490",
-      "color": "Phantom Black",
+      "color": "gray",
       "category": "phone",
       "description": "8K SUPER STEADY VIDEO: Shoot videos that rival how epic your life is with stunning 8K recording, the highest recording resolution available on a smartphone; Video captured is effortlessly smooth, thanks to Auto Focus Video Stabilization on Galaxy S22 Ultra.Display Type:AMOLED.Form_factor : Smartphone",
       "image": "https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX425_.jpg",
       "id": 8
+    }
+  ],
+  "users": [
+    {
+      "name": "rohid",
+      "email": "email@email.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "rohid",
+      "email": "email@email.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "rohid",
+      "email": "nazim@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "nazim",
+      "email": "email@email.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "rohid",
+      "email": "email1@email.com",
+      "password": "sdf",
+      "id": 5
+    },
+    {
+      "name": "rohid",
+      "email": "nazim@gmail.com",
+      "password": "sdfa",
+      "id": 6
+    },
+    {
+      "name": "rohid",
+      "email": "email1@email.com",
+      "password": "1234r",
+      "id": 7
+    },
+    {
+      "name": "sdf",
+      "email": "nazim@gmail.com",
+      "password": "sdg",
+      "id": 8
+    },
+    {
+      "name": "sdfgsdfghj",
+      "email": "dfghj",
+      "password": "sdfghj",
+      "id": 9
+    },
+    {
+      "name": "tamin",
+      "email": "tamin@gmail.com",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "name": "tamim",
+      "email": "tamin@gmail.com",
+      "password": "1234",
+      "id": 11
     }
   ]
 }

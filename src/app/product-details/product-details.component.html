@@ -1,0 +1,79 @@
+<div class="continear">
+  <div class="product-wrapper row g-2" *ngIf="productData">
+    <div class="col-sm-6 product-image text-center">
+      <div class="main-image">
+        <img src="{{ productData.image }}" alt="" />
+      </div>
+    </div>
+    <div class="details card-body col-7 col-sm-6 p-3 border bg-light">
+      <h6>{{ productData.name }}</h6>
+      <p class="product-price">
+        Price:
+        <i>{{ productData.price | currency : "USD" : true : "1.2-3" }}</i>
+      </p>
+
+      <div class="product-color">
+        Color:
+        <span [style.background]="productData.color"></span>
+        <br />
+        <i class="mt-3">{{ productData.color }}</i>
+      </div>
+      <h5>Cetagory: {{ productData.category }}</h5>
+      <h5>Description: {{ productData.description }}</h5>
+      <div class="product-counter">
+        <button (click)="handelQuantity('min')">-</button>
+        <input value="{{ productQuantity }}" />
+        <button (click)="handelQuantity('plas')">+</button>
+      </div>
+      <button class="btn-primary mx-3 btn-sm p-sm-2" (click)="AddToCard()">
+        Add to Card
+      </button>
+      <button class="btn-danger mx-3 btn-sm p-sm-2">Buy Now</button>
+    </div>
+  </div>
+
+  <!--- Same cetagory -->
+  <div class="product-list-wrapper" *ngIf="sameCetagoryProduct">
+    <h1>Same Cetagory Products</h1>
+    <div class="row">
+      <!-- Start -->
+      <div
+        class="product-item col-sm-3 mx-2"
+        *ngFor="let trendy of sameCetagoryProduct"
+      >
+        <div class="card" style="width: 17rem; height: 30rem">
+          <img class="card-img-top" src="{{ trendy.image }}" alt="" />
+
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: larger; font: wiget 300px">
+              {{ trendy.name }}
+            </h5>
+            <div class="fs-7">
+              <h3>
+                Price:
+                <i class="text-start" style="color: rgb(238, 96, 40)"
+                  >${{ trendy.price }}</i
+                >
+              </h3>
+            </div>
+            <div class="m-2" style="max-height: 20px; overflow: hidden">
+              <h4>Color: {{ trendy.color }}</h4>
+            </div>
+            <div class="m-2" style="max-height: 42px; overflow: hidden">
+              <h4>{{ trendy.description }}</h4>
+            </div>
+          </div>
+          <div class="product-footer flex justify-between p-1">
+            <a class="btn btn-success" routerLink="/details/{{ trendy.id }}"
+              >View Details</a
+            >
+            <a class="btn btn-info text-end" (click)="AddToCard()"
+              >Add to Card</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+    </div>
+  </div>
+</div>

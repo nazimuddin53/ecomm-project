@@ -1,0 +1,110 @@
+<div class="user-auth">
+  <!-- sign up -->
+  <div class="signup" *ngIf="isSignIn">
+    <h1>Sign Up</h1>
+    <form
+      #signUpForm="ngForm"
+      class="common-form my-2"
+      (ngSubmit)="signUp(signUpForm.value)"
+    >
+      <p class="error-p"></p>
+      <input
+        class="form-input"
+        type="text"
+        ngModel
+        name="name"
+        placeholder="Enter Name"
+        #name="ngModel"
+        required
+      />
+      <p class="input-invalid" *ngIf="name.invalid && name.touched">
+        Please Enter Your Name
+      </p>
+
+      <input
+        class="form-input"
+        ngModel
+        type="email"
+        name="email"
+        placeholder="Enter Email"
+        #email="ngModel"
+        required
+        email
+      />
+      <p class="input-invalid" *ngIf="email.invalid && email.touched">
+        Please Enter Valid Email
+      </p>
+      <input
+        class="form-input"
+        ngModel
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        #password="ngModel"
+        required
+        minlength="2"
+        maxlength="20"
+      />
+      <p class="input-invalid" *ngIf="password.invalid && password.touched">
+        Please Enter Your Valid Password a-z,A-Z,0-9 min=2 && max=20
+      </p>
+      <button
+        mat-raised-button
+        class="form-button"
+        [disabled]="signUpForm.invalid"
+      >
+        Sign Up
+      </button>
+    </form>
+    <a class="auth-toggle-link my-2" (click)="openSignIn()">
+      Already have account? Sign In</a
+    >
+  </div>
+  <!-- Sign in -->
+
+  <div class="signIn" *ngIf="!isSignIn">
+    <h1>Sign In</h1>
+    <form
+      #signInForm="ngForm"
+      class="common-form"
+      (ngSubmit)="signIn(signInForm.value)"
+    >
+      <p class="error-p">{{ signInError }}</p>
+      <input
+        class="form-input"
+        ngModel
+        type="email"
+        name="email"
+        placeholder="Enter Email"
+        #email="ngModel"
+        email
+        required
+      />
+      <p class="input-invalid" *ngIf="email.invalid && email.touched">
+        Please enter valid email
+      </p>
+      <input
+        class="form-input"
+        ngModel
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        #password="ngModel"
+        required
+      />
+      <p class="input-invalid" *ngIf="password.invalid && password.touched">
+        Please enter your password
+      </p>
+      <button
+        mat-raised-button
+        class="form-button"
+        [disabled]="signInForm.invalid"
+      >
+        Sign In
+      </button>
+      <a class="auth-toggle-link" (click)="openSingUp()">
+        Don't have account? Sign Up</a
+      >
+    </form>
+  </div>
+</div>

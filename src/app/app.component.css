@@ -1,0 +1,11 @@
+.app-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: relative;
+}
+.router-outlet {
+  margin: 20px 0;
+  padding: 20px 0 6% 0;
+  /* min-height: 36rem;  */
+}

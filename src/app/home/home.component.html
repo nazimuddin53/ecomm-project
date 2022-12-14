@@ -6,6 +6,7 @@
         class="product-header-img"
         src="{{ item.image }}"
         alt="Random first slide"
+        routerLink="/details/{{ item.id }}"
       />
     </div>
     <div class="carousel-caption">
@@ -25,16 +26,26 @@
         <img src="{{ trendy.image }}" alt="" />
 
         <div class="product-details">
-          <h6 class="name-head">{{ trendy.name }}</h6>
-          <div class="product-price">
-            <h6>Price: ${{ trendy.price }}</h6>
+          <h5 class="card-title" style="font-size: larger; font: wiget 300px">
+            {{ trendy.name }}
+          </h5>
+          <div class="fs-7">
+            <h3>
+              Price:
+              <i class="text-start" style="color: rgb(238, 96, 40)"
+                >${{ trendy.price }}</i
+              >
+            </h3>
           </div>
-          <div class="product-color">
-            <h6>Color: {{ trendy.color }}</h6>
+          <div class="m-2" style="max-height: 20px; overflow: hidden">
+            <h4>Color: {{ trendy.color }}</h4>
+          </div>
+          <div class="m-2" style="max-height: 42px; overflow: hidden">
+            <h4>{{ trendy.description }}</h4>
           </div>
         </div>
         <div class="product-footer">
-          <a href="#">View Details</a>
+          <a routerLink="/details/{{ trendy.id }}">View Details</a>
           <a href="#">Add to Card</a>
         </div>
       </div>

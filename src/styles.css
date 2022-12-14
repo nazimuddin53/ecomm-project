@@ -54,9 +54,14 @@ body {
   color: aliceblue;
   background-color: var(--blueviolet);
 }
-.error-p {
+.form-button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(225, 203, 247);
+}
+.error-p,
+.input-invalid {
   color: rgb(104, 6, 6);
-  font-size: 20px;
+  font-size: 12px;
 }
 .gr-p-mess {
   background-color: var(--mss-gre-box);
@@ -82,6 +87,14 @@ body {
   background-repeat: no-repeat;
   background-size: 18px;
 }
-
+/***** Footer Start ******/
+.app-footer {
+  justify-content: space-around;
+}
+.footer {
+  bottom: 0;
+  position: absolute;
+}
+/***** Footer End ******/
 @media only screen and (max-width: 789px) {
 }
